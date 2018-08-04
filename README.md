@@ -1,1 +1,3 @@
-# Seekr3.0
+# Seekr
+
+Time to seek your adventure!
