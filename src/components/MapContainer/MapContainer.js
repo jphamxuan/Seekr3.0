@@ -4,10 +4,11 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { Row, Col, Input, Button, Card, CardTitle, Icon } from 'react-materialize'
 import { API, USER } from "../../utils";
 import Pin from '../../images/pin.png';
-import SaveButton from "../SaveButton"
-import CardList from "../CardList"
+import SaveButton from "../SaveButton";
+import CardList from "../CardList";
+import { createStore, applyMiddleware } from "C:/Users/Josiah/AppData/Local/Microsoft/TypeScript/2.9/node_modules/redux";
 
-
+const store = createStore(() => [],{}, applyMiddleware());
 
 export class MapContainer extends Component {
     state = {
@@ -40,6 +41,7 @@ export class MapContainer extends Component {
         this.searchTrails(this.state.lat, this.state.lng)
        
     }
+    
     loadUser = (id) => {
         USER.getUser(id)
             .then(res => this.setState({ userAc: res.data, savedTrails: res.data.savedTrails })
@@ -312,8 +314,7 @@ export class MapContainer extends Component {
                 )}
                 </Col>
                 
-            </Row>
-                
+            </Row> 
     );
     }
 }

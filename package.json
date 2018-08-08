@@ -28,21 +28,22 @@
         "dotenv": "^6.0.0",
         "express": "^4.15.4",
         "express-session": "^1.15.6",
-        "gmaps": "^0.4.24",
+        "geolib": "^2.0.24",
         "google-maps-react": "^2.0.2",
-        "lodash": "^4.17.10",
         "mongoose": "^5.1.5",
         "passport": "^0.4.0",
         "passport-local": "^1.0.0",
         "prop-types": "^15.6.2",
         "react": "^16.0.0",
-        "react-bootstrap-typeahead": "^3.2.0",
         "react-dom": "^16.0.0",
         "react-dropzone": "^4.2.12",
         "react-helmet": "^5.2.0",
         "react-materialize": "^2.3.1",
+        "react-redux": "^5.0.7",
         "react-router-dom": "^4.3.1",
-        "react-scripts": "1.0.14"
+        "react-scripts": "1.0.14",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0"
     },
-    "proxy": "http://localhost:3011"
+    "proxy": "http://localhost:3002"
 }
